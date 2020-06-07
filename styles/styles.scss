@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 0 25px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffbe5f;
+    outline: none;
+}
+
+.image {
+    display: block;
+}
+
+.article {
+    color: #856b44;
+    &--lg {
+        font-size: 48px;
+    }
+    &--md {
+        font-size: 36px;
+    }
+    &--sm {
+        font-size: 24px;
+    }
+    &--xsm {
+        font-size: 20px;
+    }
+}
+
+.logo {
+    &__link {
+        display: block;
+    }
+    &__icon {
+        width: 100%;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        &--end {
+            justify-content: flex-end;
+        }
+        &--center {
+            justify-content: center;
+        }
+        &--vertical {
+            flex-direction: column;
+        }
+        &-link {
+            text-align: center;
+            display: block;
+            padding: 10px 15px;
+            &:hover {
+                background-color: rgba($color: #ccb38d, $alpha: 0.3);
+                transition: 0.1s;
+            }
+        }
+    }
+}
+
+.header {
+    &__section {
+        background-color: #807058;
+        padding: 10px 0;
+    }
+    &__grid {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100px auto 150px 150px;
+    }
+    &__clock {
+        color: #ffbe5f;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: right;
+        display: block;
+    }
+    &__date {
+        color: #ffbe5f;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: right;
+        display: block;
+    }
+}
+
+.table {
+    &__section {
+        padding: 50px 0;
+        min-height: calc(100vh - 190px);
+        background-color: #ffdfb0;
+    }
+    &__article {
+        padding: 15px 30px;
+        margin: 30px 0;
+        position: relative;
+        &:before {
+            position: absolute;
+            left: 0;
+            width: 5px;
+            top: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            background-color: #856b44;
+        }
+    }
+    &__description {
+        color: #856b44;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    &__block {
+        border-collapse: collapse;
+        border: 1px solid #856b44;
+        color: #807058;
+        width: 100%;
+        margin: 15px 0;
+        tr:hover td {
+            background-color: #ccb38d;
+            color: #ffdfb0;
+        }
+        td,
+        th {
+            border: 1px solid #856b44;
+            padding: 5px;
+            text-align: left;
+            transition: 0.1s;
+        }
+        th {
+            background-color: #ccb38d;
+        }
+    }
+}
+
+.redirect {
+    &__section {
+        background-color: #ffdfb0;
+        padding: 50px 0;
+        min-height: calc(100vh - 190px);
+    }
+}
+
+.anchor {
+    &__section {
+        background-color: #ffdfb0;
+        padding: 50px 0;
+        min-height: calc(100vh - 190px);
+    }
+    &__contents {
+        padding: 15px 30px;
+        border: 2px solid #807058;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    &__article {
+        margin-bottom: 15px;
+    }
+    &__list {
+        padding-left: 15px;
+        &-item {
+            list-style-type: initial;
+            color: #856b44;
+            padding: 3px 0;
+        }
+        &-link {
+            text-decoration: underline;
+            color: #856b44;
+        }
+    }
+    &__paragraph {
+        font-size: 16px;
+        color: #856b44;
+        margin-bottom: 15px;
+        line-height: 1.4em;
+    }
+}
+
+.map {
+    &__section {
+        background-color: #ffdfb0;
+        padding: 50px 0;
+        min-height: calc(100vh - 190px);
+    }
+    &__image {
+        width: 100%;
+    }
+}
+
+.footer {
+    &__section {
+        background-color: #807058;
+        padding: 10px 0;
+    }
+    &__grid {
+        display: grid;
+        align-items: center;
+        gap: 50px;
+        grid-template-columns: 200px repeat(auto-fill, 150px);
+    }
+}
+
+.profile-form {
+    &__section {
+        padding: 50px 0;
+        background-color: #ffdfb0;
+        min-height: 50vh;
+    }
+    &__block {
+        display: grid;
+        gap: 10px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+    }
+    &__label {
+        &--horizontal {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__description {
+        display: block;
+    }
+
+    &__state {
+        font-size: 12px;
+        margin: 0 5px 0 10px;
+    }
+
+    &__radio-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__checkbox {
+        margin-left: 10px;
+    }
+
+    &__input {
+        border-radius: 2px;
+        padding: 5px 7px;
+        border: 1px solid #807058;
+        outline: none;
+        transition: 0.3s;
+        width: 100%;
+        &:focus {
+            box-shadow: 0 0 0 1px #856b44;
+        }
+    }
+    &__result {
+        padding: 10px 0;
+    }
+}
+
+.user-list {
+    &__section {
+        min-height: 50vh;
+        padding: 50px 0;
+        background-color: #ffdfb0;
+    }
+    &__name {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        &-item {
+            padding: 5px;
+        }
+    }
+    &__grid {
+        display: grid;
+        gap: 10px;
+        &-item {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 10px 25px;
+            background-color: #ffbe5f;
+            border-radius: 3px;
+            box-shadow: 0 3px 5px rgba($color: #333, $alpha: 0.3);
+        }
+        &-subitem {
+            min-height: 10px;
+            padding: 0 10px;
+            border-right: 1px solid rgba($color: #333, $alpha: 0.3);
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}

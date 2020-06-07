@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <META HTTP-EQUIV="Content-Language" CONTENT="UA">
+    <META NAME="Description" CONTENT="лабораторні роботи ВНТУ">
+    <META NAME="Keywords" CONTENT="ВНТУ, Лаби, Веб">
+    <META NAME="Author" CONTENT="Козьмін Віталій">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота - 2</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="section header__section">
+        <div class="container header__container">
+            <div class="header__grid">
+                <div class="header__grid-item">
+                    <a href="#" class="link logo__link">
+                        <img src="logo.png" alt="" class="image logo__icon">
+                    </a>
+                </div>
+                <div class="header__grid-item">
+                    <nav class="nav nav__block">
+                        <ul class="list nav__list nav__list--center">
+                            <li class="nav__list-item">
+                                <a href="index_1.html" class="link nav__list-link">ЛР-1</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_2.html" class="link nav__list-link">ЛР-2</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_2_1.html" class="link nav__list-link">ЛР-2.1</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_2_2.html" class="link nav__list-link">ЛР-2.2</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_3_1.html" class="link nav__list-link">ЛР-3,5</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__grid-item">
+                    <span class="header__clock">
+                    </span>
+                </div>
+                <div class="header__grid-item">
+                    <span class="header__date">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section profile-form__section">
+        <div class="container profile-form__container">
+            <h2 class="article article--lg table__article">Лабораторна робота №3,5,7 Форма</h2>
+            <form id="profileForm" action="" class="profile-form__block">
+                <label class="profile-form__label profile-form__label--name">
+                    <span class="profile-form__description">Пошта</span>
+                    <input name="mail" required type="email" class="profile-form__input">
+                </label>
+                <label class="profile-form__label profile-form__label--surname">
+                    <span class="profile-form__description">Прізвище:</span>
+                    <input name="surname" required type="text" class="profile-form__input">
+                </label>
+                <label class="profile-form__label profile-form__label--horizontal">
+                    <span class="profile-form__description">Стать:</span>
+                    <div class="profile-form__radio-item">
+                        <span class="profile-form__state">Чоловіча</span>
+                        <input required name="sex" type="radio" value="male" class="profile-form__radio">
+                    </div>
+                    <div class="profile-form__radio-item">
+                        <span class="profile-form__state">Жіноча</span>
+                        <input required name="sex" type="radio" value="female" class="profile-form__radio">
+                    </div>
+                </label>
+                <label class="profile-form__label profile-form__label--horizontal">
+                    <span class="profile-form__description">Підписатися на новини</span>
+                    <input name="subscribe" value='true' type="checkbox" class="profile-form__checkbox">
+                </label>
+                <input class="profile-form__button profile-form__button--submit" type="submit" value="Відправити">
+                <input class="profile-form__button profile-form__button--reset" type="reset" value="Очистити поля">
+            </form>
+            <div id="codeArea" class="profile-form__result">
+                <code class="profile-form__json"></code>
+            </div>
+        </div>
+    </section>
+    <section class="section user-list__section">
+        <div class="container user-list__container">
+            <div class="user-list__name">
+                <div class="user-list__name-item">Дата</div>
+                <div class="user-list__name-item">Прізвище</div>
+                <div class="user-list__name-item">Пошта</div>
+                <div class="user-list__name-item">Стать</div>
+                <div class="user-list__name-item">Підписка</div>
+            </div>
+            <div class="user-list__grid">
+                <div class="user-list__grid-item">
+                    <div class="user-list__grid-subitem"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section footer__section">
+        <div class="container footer__container">
+            <div class="footer__grid">
+                <div class="footer__grid-item">
+                    <a href="#" class="link logo__link">
+                        <img src="logo.png" alt="" class="image logo__icon">
+                    </a>
+                </div>
+                <div class="footer__grid-item">
+                    <nav class="nav nav__block">
+                        <ul class="list nav__list">
+                            <li class="nav__list-item">
+                                <a href="index_1.html" class="link nav__list-link">ЛР-1</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_2.html" class="link nav__list-link">ЛР-2</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_2_1.html" class="link nav__list-link">ЛР-2.1</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_2_2.html" class="link nav__list-link">ЛР-2.2</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index_3_1.html" class="link nav__list-link">ЛР-3,5</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/date.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
+    <script src="script/formFirebase.js"></script>
+</body>
+
+</html>
